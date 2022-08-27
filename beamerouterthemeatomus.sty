@@ -1,0 +1,21 @@
+\mode<presentation>
+
+% Frame title
+\defbeamertemplate*{frametitle}{atomus}[1][]
+{
+  \begin{tikzpicture}[overlay, remember picture]
+    \node[inner sep=0pt,outer sep=0pt,below=0.2cm] at (current page.north)
+    {\includegraphics[width=\the\paperwidth]{media/atomus-frame-title-background.png}};
+    \node[anchor=west,gray] at (0.5cm,-0.2cm){\textbf{\insertframetitle}};
+  \end{tikzpicture}
+}
+
+\defbeamertemplate*{footline}{atomus}
+{
+  \begin{tikzpicture}[overlay, remember picture]
+    \node[inner sep=0pt,outer sep=0pt,anchor=south] at (current page.south)
+    {\includegraphics[width=\the\paperwidth]{media/atomus-frame-footer-image.png}};
+  \end{tikzpicture}
+}
+
+\mode<all>

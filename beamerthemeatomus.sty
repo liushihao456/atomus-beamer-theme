@@ -1,0 +1,30 @@
+\mode<presentation>
+
+% Requirement
+\RequirePackage{tikz}
+\RequirePackage{fontspec}
+
+% Set font
+\setCJKsansfont{msyh}[Path=font/]
+\setsansfont{Arial}[
+Path=font/,
+UprightFont=*,
+BoldFont=* Bold,
+ItalicFont=* Italic,
+BoldItalicFont=* Bold Italic
+]
+
+% Settings
+\useinnertheme{atomus}
+\useoutertheme{atomus}
+\usecolortheme{atomus}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+
+% The background canvas is vertically shaded from white to RGB(220,220,220)
+\definecolor{lightgray}{RGB}{220,220,220}
+\setbeamertemplate{background canvas}[vertical shading]
+[top=white,bottom=lightgray]
+
+\mode<all>
