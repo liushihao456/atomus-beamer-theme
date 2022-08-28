@@ -1,5 +1,6 @@
 \documentclass[aspectratio=169,9pt]{beamer}
 \usepackage[UTF8]{ctex}
+\usepackage{minted}
 \title{强化学习单标的择时策略}
 \date[ISPN ’80]{2022/8/25}
 \author[LiuShihao]{刘世豪}
@@ -31,15 +32,36 @@
 \begin{frame}
   \frametitle{测试其它指标}
   \begin{columns}
-    \begin{column}{0.4\textwidth}
+    \begin{column}{0.5\textwidth}
       \begin{enumerate}
       \item 成分股涨跌比率
       \item 上涨集中度(成分股涨幅超过benchmark的比例)
       \end{enumerate}
     \end{column}
-    \begin{column}{0.6\textwidth}
+    \begin{column}{0.5\textwidth}
       \includegraphics[height=0.4\paperheight]{media/rise-rates.jpg}
       \includegraphics[height=0.4\paperheight]{media/rise-rates.jpg}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+  \begin{columns}
+    \begin{column}{0.4\textwidth}
+      In C++:
+      \begin{minted}[fontsize=\footnotesize]{cpp}
+int main() {
+  std::out << "Hello world!" << std::endl;
+  return 0;
+}
+      \end{minted}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      In Python:
+      \begin{minted}[fontsize=\footnotesize]{python}
+if __name__ == '__main__':
+    print('Hello world!')
+      \end{minted}
     \end{column}
   \end{columns}
 \end{frame}
