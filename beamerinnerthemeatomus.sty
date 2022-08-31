@@ -3,10 +3,10 @@
 % Title page
 \defbeamertemplate*{title page}{atomus}[1][]
 {
-  \setsansfont{Times New Roman}[Path=font/]
+  \setsansfont{Times New Roman}[Path=assets/font/]
   \begin{tikzpicture}[overlay, remember picture]
     \node[inner sep=0pt,outer sep=0pt,anchor=north east] at (current page.north east)
-    {\includegraphics[width=\the\paperwidth,height=\the\paperheight]{media/atomus-title-page-background.png}};
+    {\includegraphics[width=\the\paperwidth,height=\the\paperheight]{assets/media/atomus-title-page-background.png}};
   \end{tikzpicture}
   \vskip3cm%
   \begin{beamercolorbox}[wd=6cm,leftskip=1cm,center,#1]{title page header}
@@ -14,11 +14,11 @@
   \end{beamercolorbox}%
   \vskip0.75cm%
   \begin{beamercolorbox}[wd=6cm,leftskip=1cm,center,#1]{author}
-    \usebeamerfont{author}\insertauthor%
+    \usebeamerfont{author}\small{\insertauthor}%
   \end{beamercolorbox}
   \vskip0.2cm%
   \begin{beamercolorbox}[wd=6cm,leftskip=1cm,center,#1]{date}
-    \usebeamerfont{author}\insertdate%
+    \usebeamerfont{author}\small{\insertdate}%
   \end{beamercolorbox}
   \vfill
 }
@@ -26,10 +26,10 @@
 % End page
 \defbeamertemplate*{endpage}{atomus}
 {
-  \setsansfont{Times New Roman}[Path=font/]
+  \setsansfont{Times New Roman}[Path=assets/font/]
   \begin{tikzpicture}[overlay, remember picture]
     \node[inner sep=0pt,outer sep=0pt,anchor=north east] at (current page.north east)
-    {\includegraphics[height=\the\paperheight]{media/atomus-end-page-background.pdf}};
+    {\includegraphics[height=\the\paperheight]{assets/media/atomus-end-page-background.pdf}};
 
     \node[anchor=south west,xshift=0.08\paperwidth,yshift=0.275\paperheight] at (current page.south west)
     {\footnotesize{上海简雍资产管理有限公司}};

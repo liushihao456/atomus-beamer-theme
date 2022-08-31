@@ -4,14 +4,22 @@
 \RequirePackage{tikz}
 \RequirePackage{fontspec}
 
+% Set line spacing
+% It affects code listings too, making them look ugly
+% \renewcommand{\baselinestretch}{1.25}
+
+% Use symbols as footnote markers
+% It doesn't work. Not sure why.
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
 % Set font
 \setCJKsansfont{msyh}[
-Path=font/,
+Path=assets/font/,
 UprightFont=*,
 BoldFont=* Bold
 ]
 \setsansfont{Arial}[
-Path=font/,
+Path=assets/font/,
 UprightFont=*,
 BoldFont=* Bold,
 ItalicFont=* Italic,
@@ -25,6 +33,7 @@ BoldItalicFont=* Bold Italic
 
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{blocks}[rounded][shadow=true]
+\setbeamertemplate{itemize subitem}[circle]
 
 % The background canvas is vertically shaded from white to RGB(220,220,220)
 \definecolor{lightgray}{RGB}{220,220,220}
